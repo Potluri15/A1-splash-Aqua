@@ -1,0 +1,276 @@
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #254a65;
+}
+
+.header .logo-container {
+  width: 150px;
+}
+
+.header .logo {
+  width: 100%;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li {
+  font-weight: bold;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #254a65;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #254a65;
+}
+
+.feature-card {
+  flex: 1;
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card img {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.feature-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #254a65;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-links {
+  list-style: none;
+  flex: 1;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-contact {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-contact p {
+  margin: 0.5rem 0;
+}
+
+.footer-contact img {
+  width: 20px;
+  margin-right: 10px;
+}
+/* Eco & Maintenance Section */
+.eco-maintenance-section {
+  background-color: #254a65;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.eco-maintenance {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.feature-block {
+  flex: 1;
+  max-width: 500px;
+  margin: 0 1rem;
+}
+
+.feature-block h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.feature-block p {
+  font-size: 1rem;
+}
+
+.feature-image {
+  max-width: 100px;
+}
+
+/* Consultation Section */
+.consultation-section {
+  margin: 3rem 0;
+}
+
+.consultation-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.consultation-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.consult-button {
+  background-color: white;
+  color: #3890d0;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Products Section */
+.product-section {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.product-card {
+  text-align: center;
+  max-width: 200px;
+}
+
+.product-image {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+}
+
+/* Responsive for the new section */
+@media screen and (max-width: 768px) {
+  .eco-maintenance {
+      flex-direction: column;
+  }
+
+  .feature-block {
+      margin-bottom: 2rem;
+  }
+
+  .products {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .product-card {
+      margin-bottom: 1.5rem;
+  }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .features {
+      flex-direction: column;
+  }
+
+  .feature-card {
+      margin-bottom: 2rem;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-logo,
+  .footer-contact {
+      text-align: center;
+  }
+}
