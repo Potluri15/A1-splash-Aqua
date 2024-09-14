@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2E3B4E;
+    color: #FFFFFF;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1A1A1A;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav a.products {
+    background-color: #D4A373;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.main-content img {
+    width: 400px;
+    height: auto;
+    margin-right: 50px;
+}
+
+.main-content .text-content {
+    max-width: 500px;
+}
+
+.main-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.main-content .enquire-btn {
+    background-color: #FFFFFF;
+    color: #2E3B4E;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.details {
+    padding: 50px;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.details h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.details p, .details ul li {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #FFFFFF;
+    color: #2E3B4E;
+}
+
+.footer img {
+    height: 100px;
+}
+
+.footer .explore, .footer .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer .explore a, .footer .contact a {
+    color: #2E3B4E;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer .contact i {
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-content img {
+        margin-bottom: 20px;
+    }
+
+    .details, .footer {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content h1 {
+        font-size: 24px;
+    }
+
+    .main-content p {
+        font-size: 16px;
+    }
+
+    .details h2 {
+        font-size: 20px;
+    }
+
+    .details p, .details ul li {
+        font-size: 14px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

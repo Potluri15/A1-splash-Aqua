@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1E3A5F;
+    color: #fff;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1E3A5F;
+}
+.header img {
+    height: 50px;
+}
+.nav {
+    display: flex;
+    gap: 20px;
+}
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.nav a.products {
+    background-color: #F4C95D;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #1E3A5F;
+}
+.main {
+    text-align: center;
+    padding: 50px 20px;
+}
+.main h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.main p {
+    font-size: 1.2em;
+    margin-bottom: 50px;
+}
+.product {
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product img {
+    height: 100px;
+}
+.product .info {
+    flex: 1;
+    margin-left: 20px;
+}
+.product .info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.product .info button {
+    background-color: #F4C95D;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.pagination button {
+    background-color: #F4C95D;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.footer {
+    background-color: #1E3A5F;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.footer .logo {
+    display: flex;
+    align-items: center;
+}
+.footer .logo img {
+    height: 50px;
+    margin-right: 20px;
+}
+.footer .explore, .footer .contact {
+    display: flex;
+    flex-direction: column;
+}
+.footer .explore a, .footer .contact a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.footer .contact p {
+    margin: 5px 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .header, .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .main h1 {
+        font-size: 2.5em;
+    }
+    .main p {
+        font-size: 1em;
+    }
+    .product {
+        flex-direction: column;
+        text-align: center;
+    }
+    .product img {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .main h1 {
+        font-size: 2em;
+    }
+    .main p {
+        font-size: 0.9em;
+    }
+    .product img {
+        height: 80px;
+    }
+    .pagination button {
+        padding: 5px 10px;
+    }
+}
